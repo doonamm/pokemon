@@ -22,7 +22,8 @@ h1{
     margin: 0 auto;
     max-width: 1200px;
 }
-.pokemon{
+div.pokemon{
+    max-width: 280px;
     background-color: #eee;
     border-radius: 20px;
     padding: 20px;
@@ -30,25 +31,48 @@ h1{
     margin: 10px;
     box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
 }
-.pokemon .img-container{
-    max-width: 120px;
+div.pokemon div.img-container{
+    width: 120px;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.6);
 }
-.pokemon .img-container img{
+div.pokemon div.img-container > img{
     margin-top: 20px;
-    max-width: 90%;
+    width: 90%;
+    height: auto;
 }
-.pokemon .info{
+div.pokemon div.info{
+    font-size: 1em;
     margin-top: 20px;
+    width: 100%;
+    height: auto;
 }
-.pokemon .number{
+div.pokemon span.number{
     background: #fff;
     border-radius: 50%;
     font-size: 0.8em;
     padding: 5px 10px;
 }
-.pokemon .name{
+div.pokemon h3.name{
     margin: 15px 0 7px;
     letter-spacing: 1px;
+    opacity: 0.9;
+}
+@media only screen and (max-device-width: 415px) {
+    h1{
+        font-size: 4em;
+        color: #000;
+    }
+    div.pokemon div.info{
+        font-size: 40px;
+    }
+    div.pokemon div.img-container{
+        width: 240px;
+    }
+    div.pokemon h3.name{
+        font-size: 0.95em;
+    }
+    div.pokemon small.type{
+        font-size: 0.8em;
+    }
 }
