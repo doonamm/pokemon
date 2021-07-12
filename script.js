@@ -1,5 +1,5 @@
 const poke_container = document.getElementById('poke-container');
-const poke_number = 150;
+const poke_number = 898;
 
 const colors = {
     fire: '#fddfdf',
