@@ -14,6 +14,9 @@ body{
 h1{
     letter-spacing: 3px;
 }
+::selection{
+    background-color: #999;
+}
 .poke-container{
     display: flex;
     flex-wrap: wrap;
@@ -43,6 +46,8 @@ div.pokemon div.img-container > img{
     margin-top: 20px;
     width: 90%;
     height: auto;
+    user-select: none;
+    pointer-events: none;
 }
 div.pokemon div.info{
     font-size: 1em;
