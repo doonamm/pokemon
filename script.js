@@ -48,7 +48,7 @@ function createPokeCard(poke){
     const name = poke.name[0].toUpperCase() + poke.name.slice(1);
     const pokeInnerHTML = `
         <div class="img-container">
-            <img class="lazyload" data-src="https://pokeres.bastionbot.org/images/pokemon/${poke.id}.png">
+            <img class="lazyload" data-src="https://pokeres.bastionbot.org/images/pokemon/${poke.id}.png" width="108px" height="108px">
         </div>
         <div class="info">
             <span class="number">#${poke.id.toString().padStart(3, '0')}</span>

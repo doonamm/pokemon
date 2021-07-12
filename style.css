@@ -31,6 +31,9 @@ div.pokemon{
     margin: 10px;
     box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
 }
+img:not([src]){
+    visibility: hidden;
+}
 div.pokemon div.img-container{
     width: 120px;
     border-radius: 50%;
