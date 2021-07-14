@@ -23,7 +23,7 @@ h1{
     align-items: space-between;
     justify-content: center;
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 790px;
 }
 div.pokemon{
     max-width: 280px;
@@ -38,16 +38,19 @@ img:not([src]){
     visibility: hidden;
 }
 div.pokemon div.img-container{
-    width: 120px;
+    width: 140px;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.9);
+    margin: 0 auto;
 }
 div.pokemon div.img-container > img{
+    margin: 0 auto;
     margin-top: 20px;
     width: 90%;
     height: auto;
     user-select: none;
     pointer-events: none;
+    filter: saturate(1.1);
 }
 div.pokemon div.info{
     font-size: 1em;
@@ -70,6 +73,9 @@ div.pokemon h3.name{
     h1{
         font-size: 4em;
         color: #000;
+    }
+    div.poke-container{
+        max-width: 100%;
     }
     div.pokemon div.info{
         font-size: 40px;
